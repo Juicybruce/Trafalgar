@@ -11969,8 +11969,8 @@ fieldset:disabled .btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header__icon {
@@ -12012,6 +12012,8 @@ fieldset:disabled .btn {
 
 @media (min-width: 768px) {
   .header__text {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: block;
   }
 }
