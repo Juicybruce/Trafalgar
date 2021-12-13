@@ -12010,7 +12010,7 @@ fieldset:disabled .btn {
   transition: 0.3s;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header__text {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -12097,7 +12097,7 @@ fieldset:disabled .btn {
           transform: rotate(-45deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .btn-menu {
     display: none;
   }
@@ -12178,8 +12178,8 @@ fieldset:disabled .btn {
 }
 
 .text-block1 {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 100px;
 }
 
@@ -12202,9 +12202,23 @@ fieldset:disabled .btn {
   border-radius: 55px;
 }
 
+@media (min-width: 768px) {
+  .text-block1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-block1 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .text-block2 {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 100px;
 }
 
@@ -12229,6 +12243,20 @@ fieldset:disabled .btn {
   max-width: 420px;
 }
 
+@media (min-width: 768px) {
+  .text-block2 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-block2 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 @media (min-width: 992px) {
   .responseimg {
     -webkit-box-ordinal-group: 2;
@@ -12241,8 +12269,8 @@ fieldset:disabled .btn {
   max-width: 100%;
   margin-top: 70px;
   margin-bottom: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12273,6 +12301,20 @@ fieldset:disabled .btn {
 .services__para {
   font-size: 18px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .services {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .background-img1 {
