@@ -155,15 +155,37 @@
 }
 
 .carousel-container {
+    position: relative;
     background-image: linear-gradient(to top right, #67C3F3, #5A98F2);
     border-radius: 25px;
     width: 100%;
-    padding-left: 118px;
-    padding-right: 118px;
-    padding-top: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
     padding-bottom: 90px;
     margin-bottom: 150px;
+    transition: 0.3s;
     
+    @include media-breakpoint-up(md) {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 64px;
+        padding-bottom: 90px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-left: 118px;
+        padding-right: 118px;
+        padding-top: 64px;
+        padding-bottom: 90px;
+    }
+    
+    
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title {
         font-size: 36px;
@@ -179,16 +201,16 @@
         margin-bottom: 25px;
         background-color: white;
     }
-
 }
 
 .quote-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
     color: white;
-
+    
     &__img {
         max-width: 141px;
         max-height: 141px;
@@ -197,9 +219,14 @@
     &__text1 {
         font-size: 22px;
         font-weight: bold;
+        padding-left: 15px;
+        padding-right: 15px;
+        
     }
     
     &__text2 {
+        padding-left: 15px;
+        padding-right: 15px;
         font-size: 12px;
     }
     
@@ -208,24 +235,38 @@
         max-width: 420px;
         margin-left: auto;
     }
+    
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+    }
 }
 
 .quote-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    z-index: 5;
     .carousel-control-prev {
+        position: relative;
+        display: inline-block;
         color: $primary;
-        bottom: -500px;
-        
+
     }
     
     .carousel-control-next {
+        position: relative;
+        display: inline-block;
         color: $primary;
-        bottom: -500px;
-        left: 40px;
     }
-
+    
     .carousel-indicators {
-        bottom: -80px;
-
+        width: 100px;
+        height: 10px;
+        position: relative;
+        
         button {
             width: 10px;
             height: 10px;
@@ -244,6 +285,10 @@
 }
 
 .footer-box {
+
+    ul {
+        padding-left: 0px;
+    }
 
     li {
         list-style: none;

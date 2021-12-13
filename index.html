@@ -29,6 +29,15 @@
           <i class="btn-menu__bars" aria-hidden="true"></i>
           <span class="visually-hidden">Menu</span>
       </button>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find a doctor</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
     </div>
   </header>
 
@@ -150,65 +159,62 @@
   <section>
     <div class="container">
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="quote-carousel" class="carousel slide" data-bs-ride="carousel">
         
         <div class="carousel-container">
-          <h2 class="carousel-container__title">What our customers are saying</h2>
-          <span class="carousel-container__span"></span>
-
+          <div class="title-box">
+            <h2 class="title-box__title">What our customers are saying</h2>
+            <span class="title-box__span"></span>
+          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="quote-box">
-                <img src="./assets/images/testimonial-img.png" alt="picture of the person that submitted the quote" class="carousel-item__img">
+                <img src="./assets/images/testimonial-img.png" alt="picture of the person that submitted the quote" class="quote-box__img">
                 <div>
-                  <h3 class="carousel-item__text1">Edward Newgate</h3>
-                  <h3 class="carousel-item__text2">Founder Circle</h3>
+                  <h3 class="quote-box__text1">Edward Newgate</h3>
+                  <h3 class="quote-box__text2">Founder Circle</h3>
                 </div>
-                <p class="carousel-item__para">“Our dedicated patient engagement app and
+                <p class="quote-box__para">“Our dedicated patient engagement app and
                   web portal allow you to access information instantaneously (no tedeous form, long calls,
                   or administrative hassle) and securely”</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="quote-box">
-                <img src="./assets/images/testimonial-img.png" alt="picture of the person that submitted the quote" class="carousel-item__img">
+                <img src="./assets/images/testimonial-img.png" alt="picture of the person that submitted the quote" class="quote-box__img">
                 <div>
-                  <h3 class="carousel-item__text1">Edward Newgate</h3>
-                  <h3 class="carousel-item__text2">Founder Circle</h3>
+                  <h3 class="quote-box__text1">Lauren Palmer</h3>
+                  <h3 class="quote-box__text2">Fire-Walk Co-Founder</h3>
                 </div>
-                <p class="carousel-item__para">“Our dedicated patient engagement app and
-                  web portal allow you to access information instantaneously (no tedeous form, long calls,
-                  or administrative hassle) and securely”</p>
+                <p class="quote-box__para">“Lorem ipsum dolor sit amet ullamco laboris. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="quote-box">
-                <img src="./assets/images/testimonial-img.png" alt="picture of the person that submitted the quote" class="carousel-item__img">
+                <img src="./assets/images/testimonial-img.png" alt="picture of the person that submitted the quote" class="quote-box__img">
                 <div>
-                  <h3 class="carousel-item__text1">Edward Newgate</h3>
-                  <h3 class="carousel-item__text2">Founder Circle</h3>
+                  <h3 class="quote-box__text1">Dale Cooper</h3>
+                  <h3 class="quote-box__text2">Tibetian Monk</h3>
                 </div>
-                <p class="carousel-item__para">“Our dedicated patient engagement app and
-                  web portal allow you to access information instantaneously (no tedeous form, long calls,
-                  or administrative hassle) and securely”</p>
+                <p class="quote-box__para">“Duis aute irure dolor in reprehenderit in. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="quote-controls">
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#quote-carousel" data-bs-slide="prev">
             <i class="fas fa-arrow-left" aria-hidden="true"></i>
             <span class="visually-hidden">Previous</span>
           </button>
 
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#quote-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#quote-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#quote-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
 
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#quote-carousel" data-bs-slide="next">
             <i class="fas fa-arrow-right" aria-hidden="true"></i>
             <span class="visually-hidden">Next</span>
           </button>
